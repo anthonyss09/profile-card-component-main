@@ -1,0 +1,108 @@
+/* remove browser default styling from all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/* set background color and height to main container */
+.main_container {
+  height: 100vh;
+  width: 100vw;
+  background: hsl(185, 75%, 39%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* apply overlays to main container */
+.top_overlay {
+  position: absolute;
+  right: 40%;
+  bottom: 50%;
+}
+.bottom_overlay {
+  height: 50%;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  overflow: inherit;
+}
+
+/* apply styles to card container */
+.card_container {
+  height: 350px;
+  width: 300px;
+  border-radius: 20rem;
+  z-index: 2;
+  letter-spacing: 1px;
+}
+
+/* apply styles to card header */
+.card_header {
+  height: 35%;
+  background: url(./images/bg-pattern-card.svg);
+  display: flex;
+  justify-content: center;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+.victor {
+  background: white;
+  border-radius: 50%;
+  padding: 0.25rem;
+  margin-top: 65%;
+}
+h3 {
+  font-size: 18px;
+  padding-top: 16px;
+}
+h3 p {
+  display: inline;
+  /* color: hsl(227, 10%, 46%); */
+  font-weight: normal;
+}
+p {
+  color: hsl(0, 0%, 59%);
+}
+.body_p {
+  padding-top: 12px;
+}
+
+/* apply styles to card body */
+.card_body {
+  height: 40%;
+  background: white;
+  padding-top: 3.5rem;
+}
+.card_body {
+  text-align: center;
+}
+
+/* apply styles to card footer */
+.card_footer {
+  height: 25%;
+  background: white;
+  border-top: 0.1rem solid hsl(0, 0%, 88%);
+  border-radius: 0 0 0.75rem 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.specs {
+  width: 33.33%;
+  text-align: center;
+}
+.specs h3 {
+  padding: 6px;
+  letter-spacing: normal;
+}
+.specs p {
+  font-size: 12px;
+}
+
+/* apply styles to attributions */
+.attributions {
+  margin: 0.5rem;
+}
